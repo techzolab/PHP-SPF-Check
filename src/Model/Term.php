@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Model;
+namespace Nzldev\ToolsSPFCheck\Model;
 
 abstract class Term
 {

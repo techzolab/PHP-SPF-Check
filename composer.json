@@ -1,5 +1,5 @@
 {
-    "name": "techzolab/spfcheck",
+    "name": "techzolab/toolsspfcheck",
     "description": "Checks an IP address against a domain's SPF record",
     "type": "library",
     "require-dev": {
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Nzldev\\SPFCheck\\": "src"
+            "Nzldev\\ToolsSPFCheck\\": "src"
         }
     },
     "license": "MIT"

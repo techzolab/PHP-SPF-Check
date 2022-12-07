@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Test;
+namespace Nzldev\ToolsSPFCheck\Test;
 
 
-use Nzldev\SPFCheck\DNS\DNSRecordGetter;
+use Nzldev\ToolsSPFCheck\DNS\DNSRecordGetter;
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\DnsMock;
 

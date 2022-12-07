@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Test;
+namespace Nzldev\ToolsSPFCheck\Test;
 
-use Nzldev\SPFCheck\DNS\DNSRecordGetterInterface;
-use Nzldev\SPFCheck\Exception\DNSLookupException;
+use Nzldev\ToolsSPFCheck\DNS\DNSRecordGetterInterface;
+use Nzldev\ToolsSPFCheck\Exception\DNSLookupException;
 
 /**
  * Class that understands OpenSPF's DNS records

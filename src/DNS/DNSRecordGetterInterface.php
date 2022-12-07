@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\DNS;
+namespace Nzldev\ToolsSPFCheck\DNS;
 
 
-use Nzldev\SPFCheck\Exception\DNSLookupException;
+use Nzldev\ToolsSPFCheck\Exception\DNSLookupException;
 
 interface DNSRecordGetterInterface
 {

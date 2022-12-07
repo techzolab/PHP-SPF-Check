@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Modifier;
+namespace Nzldev\ToolsSPFCheck\Modifier;
 
-use Nzldev\SPFCheck\Model\Term;
+use Nzldev\ToolsSPFCheck\Model\Term;
 
 abstract class AbstractModifier extends Term
 {

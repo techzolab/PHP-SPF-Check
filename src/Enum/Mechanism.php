@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Enum;
+namespace Nzldev\ToolsSPFCheck\Enum;
 
 abstract class Mechanism
 {

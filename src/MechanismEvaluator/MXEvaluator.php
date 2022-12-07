@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\MechanismEvaluator;
+namespace Nzldev\ToolsSPFCheck\MechanismEvaluator;
 
-use Nzldev\SPFCheck\MacroUtils;
-use Nzldev\SPFCheck\Mechanism\AbstractMechanism;
-use Nzldev\SPFCheck\Mechanism\MX;
-use Nzldev\SPFCheck\Model\Query;
-use Nzldev\SPFCheck\Model\Result;
+use Nzldev\ToolsSPFCheck\MacroUtils;
+use Nzldev\ToolsSPFCheck\Mechanism\AbstractMechanism;
+use Nzldev\ToolsSPFCheck\Mechanism\MX;
+use Nzldev\ToolsSPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\Model\Result;
 use Symfony\Component\HttpFoundation\IpUtils;
 
 class MXEvaluator implements EvaluatorInterface

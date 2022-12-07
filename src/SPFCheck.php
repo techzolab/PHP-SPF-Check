@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck;
+namespace Nzldev\ToolsSPFCheck;
 
-use Nzldev\SPFCheck\DNS\DNSRecordGetterInterface;
-use Nzldev\SPFCheck\DNS\Session;
-use Nzldev\SPFCheck\Exception\DNSLookupException;
-use Nzldev\SPFCheck\Exception\DNSLookupLimitReachedException;
-use Nzldev\SPFCheck\Exception\MacroSyntaxError;
-use Nzldev\SPFCheck\Exception\PermErrorException;
-use Nzldev\SPFCheck\Exception\TempErrorException;
-use Nzldev\SPFCheck\Mechanism\{A, AbstractMechanism, All, Exists, IncludeMechanism, IP, MX, PTR};
-use Nzldev\SPFCheck\MechanismEvaluator\{AEvaluator, AllEvaluator, ExistsEvaluator, IncludeEvaluator, IPEvaluator, MXEvaluator, PTREvaluator};
-use Nzldev\SPFCheck\Model\Query;
-use Nzldev\SPFCheck\Model\Record;
-use Nzldev\SPFCheck\Model\Result;
-use Nzldev\SPFCheck\Modifier\Explanation;
-use Nzldev\SPFCheck\Modifier\Redirect;
+use Nzldev\ToolsSPFCheck\DNS\DNSRecordGetterInterface;
+use Nzldev\ToolsSPFCheck\DNS\Session;
+use Nzldev\ToolsSPFCheck\Exception\DNSLookupException;
+use Nzldev\ToolsSPFCheck\Exception\DNSLookupLimitReachedException;
+use Nzldev\ToolsSPFCheck\Exception\MacroSyntaxError;
+use Nzldev\ToolsSPFCheck\Exception\PermErrorException;
+use Nzldev\ToolsSPFCheck\Exception\TempErrorException;
+use Nzldev\ToolsSPFCheck\Mechanism\{A, AbstractMechanism, All, Exists, IncludeMechanism, IP, MX, PTR};
+use Nzldev\ToolsSPFCheck\MechanismEvaluator\{AEvaluator, AllEvaluator, ExistsEvaluator, IncludeEvaluator, IPEvaluator, MXEvaluator, PTREvaluator};
+use Nzldev\ToolsSPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\Model\Record;
+use Nzldev\ToolsSPFCheck\Model\Result;
+use Nzldev\ToolsSPFCheck\Modifier\Explanation;
+use Nzldev\ToolsSPFCheck\Modifier\Redirect;
 use const true;
 
-class SPFCheck
+class ToolsSPFCheck
 {
 
     protected DNSRecordGetterInterface $DNSRecordGetter;
@@ -100,7 +100,7 @@ class SPFCheck
                 $evaluator = self::getEvaluatorFor($term);
                 try {
                     if ($evaluator === IncludeEvaluator::class) {
-                        // Include evaluator needs access to SPFCheck::doGetResult
+                        // Include evaluator needs access to ToolsSPFCheck::doGetResult
                         $matches = $evaluator::matches($term, $query, $result, function (Query $query, Result $result): Result {
                             return $this->doGetResult($query, $result);
                         });

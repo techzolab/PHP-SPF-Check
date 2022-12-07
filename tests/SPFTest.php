@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Test;
+namespace Nzldev\ToolsSPFCheck\Test;
 
 
-use Nzldev\SPFCheck\DNS\DNSRecordGetterInterface;
-use Nzldev\SPFCheck\Exception\DNSLookupException;
-use Nzldev\SPFCheck\Model\Query;
-use Nzldev\SPFCheck\SPFCheck;
+use Nzldev\ToolsSPFCheck\DNS\DNSRecordGetterInterface;
+use Nzldev\ToolsSPFCheck\Exception\DNSLookupException;
+use Nzldev\ToolsSPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\ToolsSPFCheck;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Yaml\Yaml;
 
@@ -20,7 +20,7 @@ final class SPFTest extends TestCase
      */
     public function testCases($ipAddress, $domain, DNSRecordGetterInterface $dnsData, $expectedResult, ?string $explanation, ?string $helo = null, ?string $sender = null)
     {
-        $spfCheck = new SPFCheck($dnsData);
+        $spfCheck = new ToolsSPFCheck($dnsData);
         $result = $spfCheck->getResult(new Query($ipAddress, $domain, $helo, $sender));
 
         try {
@@ -111,7 +111,7 @@ final class SPFTest extends TestCase
         }
 
         foreach ($result as &$res) {
-            $constantName = '\Nzldev\SPFCheck\Model\Result::SHORT_' . strtoupper($res);
+            $constantName = '\Nzldev\ToolsSPFCheck\Model\Result::SHORT_' . strtoupper($res);
             if (defined($constantName)) {
                 $res = constant($constantName);
             } else {

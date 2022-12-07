@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Model;
+namespace Nzldev\ToolsSPFCheck\Model;
 
-use Nzldev\SPFCheck\DNS\Session;
-use Nzldev\SPFCheck\Exception\PermErrorException;
+use Nzldev\ToolsSPFCheck\DNS\Session;
+use Nzldev\ToolsSPFCheck\Exception\PermErrorException;
 
 class Result
 {

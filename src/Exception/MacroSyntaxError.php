@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Exception;
+namespace Nzldev\ToolsSPFCheck\Exception;
 
 class MacroSyntaxError extends \Exception
 {

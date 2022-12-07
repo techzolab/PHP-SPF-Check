@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\MechanismEvaluator;
+namespace Nzldev\ToolsSPFCheck\MechanismEvaluator;
 
-use Nzldev\SPFCheck\DNS\Session;
-use Nzldev\SPFCheck\Enum\Mechanism;
-use Nzldev\SPFCheck\Mechanism\AbstractMechanism;
-use Nzldev\SPFCheck\Model\Query;
-use Nzldev\SPFCheck\Model\Result;
-use Nzldev\SPFCheck\SPFCheck;
+use Nzldev\ToolsSPFCheck\DNS\Session;
+use Nzldev\ToolsSPFCheck\Enum\Mechanism;
+use Nzldev\ToolsSPFCheck\Mechanism\AbstractMechanism;
+use Nzldev\ToolsSPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\Model\Result;
+use Nzldev\ToolsSPFCheck\ToolsSPFCheck;
 use Symfony\Component\HttpFoundation\IpUtils;
 
 interface EvaluatorInterface

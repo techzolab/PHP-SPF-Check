@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\MechanismEvaluator;
+namespace Nzldev\ToolsSPFCheck\MechanismEvaluator;
 
-use Nzldev\SPFCheck\Exception\PermErrorException;
-use Nzldev\SPFCheck\Exception\TempErrorException;
-use Nzldev\SPFCheck\MacroUtils;
-use Nzldev\SPFCheck\Mechanism\AbstractMechanism;
-use Nzldev\SPFCheck\Mechanism\IncludeMechanism;
-use Nzldev\SPFCheck\Model\Query;
-use Nzldev\SPFCheck\Model\Result;
+use Nzldev\ToolsSPFCheck\Exception\PermErrorException;
+use Nzldev\ToolsSPFCheck\Exception\TempErrorException;
+use Nzldev\ToolsSPFCheck\MacroUtils;
+use Nzldev\ToolsSPFCheck\Mechanism\AbstractMechanism;
+use Nzldev\ToolsSPFCheck\Mechanism\IncludeMechanism;
+use Nzldev\ToolsSPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\Model\Result;
 
 class IncludeEvaluator implements EvaluatorInterface
 {

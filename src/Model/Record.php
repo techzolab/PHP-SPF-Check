@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Model;
+namespace Nzldev\ToolsSPFCheck\Model;
 
-use Nzldev\SPFCheck\Enum\Mechanism;
-use Nzldev\SPFCheck\Enum\Modifier as ModifierEnum;
-use Nzldev\SPFCheck\Enum\Qualifier;
-use Nzldev\SPFCheck\Mechanism\A;
-use Nzldev\SPFCheck\Mechanism\All;
-use Nzldev\SPFCheck\Mechanism\Exists;
-use Nzldev\SPFCheck\Mechanism\IncludeMechanism;
-use Nzldev\SPFCheck\Mechanism\IP;
-use Nzldev\SPFCheck\Mechanism\MX;
-use Nzldev\SPFCheck\Mechanism\PTR;
-use Nzldev\SPFCheck\Modifier\Explanation;
-use Nzldev\SPFCheck\Modifier\Redirect;
+use Nzldev\ToolsSPFCheck\Enum\Mechanism;
+use Nzldev\ToolsSPFCheck\Enum\Modifier as ModifierEnum;
+use Nzldev\ToolsSPFCheck\Enum\Qualifier;
+use Nzldev\ToolsSPFCheck\Mechanism\A;
+use Nzldev\ToolsSPFCheck\Mechanism\All;
+use Nzldev\ToolsSPFCheck\Mechanism\Exists;
+use Nzldev\ToolsSPFCheck\Mechanism\IncludeMechanism;
+use Nzldev\ToolsSPFCheck\Mechanism\IP;
+use Nzldev\ToolsSPFCheck\Mechanism\MX;
+use Nzldev\ToolsSPFCheck\Mechanism\PTR;
+use Nzldev\ToolsSPFCheck\Modifier\Explanation;
+use Nzldev\ToolsSPFCheck\Modifier\Redirect;
 
 class Record
 {

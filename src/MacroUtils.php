@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck;
+namespace Nzldev\ToolsSPFCheck;
 
-use Nzldev\SPFCheck\DNS\Session;
-use Nzldev\SPFCheck\Exception\MacroSyntaxError;
-use Nzldev\SPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\DNS\Session;
+use Nzldev\ToolsSPFCheck\Exception\MacroSyntaxError;
+use Nzldev\ToolsSPFCheck\Model\Query;
 
 abstract class MacroUtils
 {

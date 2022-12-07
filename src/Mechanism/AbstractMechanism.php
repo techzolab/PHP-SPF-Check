@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Mechanism;
+namespace Nzldev\ToolsSPFCheck\Mechanism;
 
-use Nzldev\SPFCheck\Enum\Qualifier;
-use Nzldev\SPFCheck\Model\Term;
+use Nzldev\ToolsSPFCheck\Enum\Qualifier;
+use Nzldev\ToolsSPFCheck\Model\Term;
 
 abstract class AbstractMechanism extends Term
 {

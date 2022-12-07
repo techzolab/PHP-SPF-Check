@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\MechanismEvaluator;
+namespace Nzldev\ToolsSPFCheck\MechanismEvaluator;
 
-use Nzldev\SPFCheck\Exception\DNSLookupException;
-use Nzldev\SPFCheck\Exception\TempErrorException;
-use Nzldev\SPFCheck\MacroUtils;
-use Nzldev\SPFCheck\Mechanism\AbstractMechanism;
-use Nzldev\SPFCheck\Mechanism\Exists;
-use Nzldev\SPFCheck\Model\Query;
-use Nzldev\SPFCheck\Model\Result;
+use Nzldev\ToolsSPFCheck\Exception\DNSLookupException;
+use Nzldev\ToolsSPFCheck\Exception\TempErrorException;
+use Nzldev\ToolsSPFCheck\MacroUtils;
+use Nzldev\ToolsSPFCheck\Mechanism\AbstractMechanism;
+use Nzldev\ToolsSPFCheck\Mechanism\Exists;
+use Nzldev\ToolsSPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\Model\Result;
 
 class ExistsEvaluator implements EvaluatorInterface
 {

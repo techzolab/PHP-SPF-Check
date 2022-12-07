@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Mechanism;
+namespace Nzldev\ToolsSPFCheck\Mechanism;
 
 class A extends NetworkMechanism
 {

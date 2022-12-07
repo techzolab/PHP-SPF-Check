@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Modifier;
+namespace Nzldev\ToolsSPFCheck\Modifier;
 
 class Redirect extends AbstractModifier
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\MechanismEvaluator;
+namespace Nzldev\ToolsSPFCheck\MechanismEvaluator;
 
-use Nzldev\SPFCheck\Mechanism\AbstractMechanism;
-use Nzldev\SPFCheck\Model\Query;
-use Nzldev\SPFCheck\Model\Result;
+use Nzldev\ToolsSPFCheck\Mechanism\AbstractMechanism;
+use Nzldev\ToolsSPFCheck\Model\Query;
+use Nzldev\ToolsSPFCheck\Model\Result;
 
 class AllEvaluator implements EvaluatorInterface
 {

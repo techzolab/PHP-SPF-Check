@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nzldev\SPFCheck\Mechanism;
+namespace Nzldev\ToolsSPFCheck\Mechanism;
 
 abstract class HostnameMechanism extends AbstractMechanism
 {
