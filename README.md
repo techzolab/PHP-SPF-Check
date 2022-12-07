@@ -4,11 +4,11 @@ Simple library to check an IP address against a domain's [SPF](http://www.opensp
 
 ## Installation
 This library is available through Composer.
-Run `composer require techzolab/spfcheck` or add this to your composer.json:
+Run `composer require techzolab/toolsspfcheck` or add this to your composer.json:
 ```json
 {
   "require": {
-    "techzolab/spfcheck": "^1"
+    "techzolab/toolsspfcheck": "^1"
   }
 }
 ```
